@@ -1,13 +1,33 @@
 function sum(a, b) {
-  return;
+  if (!a && !b) {
+    return 0;
+  }
+  else if (!a) {
+    return b
+  }
+  else if (!b) {
+    return a
+  }
+  return a + b;
 }
 
 function subtract(a, b) {
-  return;
+  if (!a && !b) {
+    return 0;
+  }
+  else if (!a) {
+    return b
+  }
+  else if (!b) {
+    return a
+  }
+  return a - b;
 }
-
 function divide(a, b) {
-  return;
+  if (!a || b === 0) {
+    throw new Error('Invalid dividend ')
+  }
+  return a / b;
 }
 
 function multiply(a, b) {
